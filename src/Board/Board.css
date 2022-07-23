@@ -1,0 +1,22 @@
+.board {
+    outline: 2px solid #282c34
+}
+.row {
+    height: 15vmin;
+}
+.cell {
+    width: 15vmin;
+    height: 15vmin;
+    outline: 2px solid #4285F4;
+    display: inline-block;
+    
+}
+img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 3%
+}
+.player-hidden {
+    opacity: 0.1;
+}
