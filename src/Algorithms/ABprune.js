@@ -2,7 +2,6 @@ import { BOARD_SIZE } from "../Board/Board";
 
 export function AlphaBetaSearch(board, player) {
     return player ? minValue(board, -Infinity, Infinity, player) : maxValue(board, -Infinity, Infinity, player);
-    // 
 }
 
 function maxValue(board, alpha, beta, player) {
