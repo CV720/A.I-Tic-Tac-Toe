@@ -79,9 +79,9 @@ const Board = () => {
     };
 
     return (
-        <>
-            <h1>
-                Winner: {!isOver.gameOver ? 'None' : isOver.winningPlayer === 'X' ? 'Player X' : isOver.winningPlayer === 'O' ? 'Player O' : 'Tie'}
+        <> 
+            <h1 style={isOver.gameOver ? {display : 'block'} : {visibility : 'hidden'}}>
+                Winner: {isOver.winningPlayer === 'X' ? 'Player X' : isOver.winningPlayer === 'O' ? 'Player O' : 'Tie'}
             </h1>
             <div className="board">
                 {board.map((row, rowIdx) => (
